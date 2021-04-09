@@ -1,4 +1,4 @@
-# league-of-legends-bot
+# 用强化学习玩LOL
 
 ### Demo Videos
 * [目标检测效果视频](https://drive.google.com/file/d/1Gh4WtFk9ToJuur6n2vqFqkCO9sqrxSoX/view?usp=sharing)
