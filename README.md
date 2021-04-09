@@ -1,8 +1,8 @@
 # league-of-legends-bot
 
 ### Demo Videos
-* [Object detection demo](https://drive.google.com/file/d/1Gh4WtFk9ToJuur6n2vqFqkCO9sqrxSoX/view?usp=sharing)
-* [LSTM and LSTM+PPO demo](https://drive.google.com/open?id=1pfB3na3cBMGpqV61aJ8TGsxrXeY8EJpf)
+* [目标检测效果视频](https://drive.google.com/file/d/1Gh4WtFk9ToJuur6n2vqFqkCO9sqrxSoX/view?usp=sharing)
+* [LSTM模型和LSTM+PPO效果视频](https://drive.google.com/open?id=1pfB3na3cBMGpqV61aJ8TGsxrXeY8EJpf)
 
 ### Materials
 * [League of Legends Object Detection Images and Labels](https://drive.google.com/open?id=1juBqe6SQbos621ZPfhurQe_5ZLvjaXCW)

@@ -1,58 +1,58 @@
+# 数据标注
+
 Forked from [puzzledqs/BBox-Label-Tool](https://github.com/puzzledqs/BBox-Label-Tool)
 
+用来标注ImageNet中的数据。
 
-It's originally used to label data in ImageNet
+-- 将文件格式改为bmp(main.py)。jpg文件使用main_jpg.py。
 
+-- 重写部分内容，允许重新调整图像（大图像的变通办法）。
 
--- Change file format to bmp (main.py). Use main_jpg.py for jpg files
-
--- rewrite some part to allow image rescalling (workaround for large images)
- 
--- Add window resize config file. To change image size, please input the size in windowsize.txt and restart the program.
-
+-- 添加窗口大小调整配置文件。要改变图像大小，请在windowsize.txt中输入大小，然后重新启动程序。
 
 -Jeffery.
 
 ===============
 
 
-Usage
+使用方式
 
-1. Split training images into N folders so you don't need to label all of them once.
-- Put all images to be labeled **each time** into Images/001, Images/002, etc.
-(001 has been created for you, if you need more, simply create them)
-- Under 'Labels' folder, create empty folders with same names as in Images (001,002,etc.). (001 has been created) 
+1. 把训练图像分成N个文件夹，这样就不需要把所有的图像都打标签。
+- 把所有要打标签的图片放入Images/000、Images/001等文件夹中。
+(000已经为你创建了，如果你需要更多，只需创建即可)
+- 在 "Labels "文件夹下，创建与 "Images "相同名称的空文件夹（000、001等）。(000已创建)
 
-2. execute 'main.exe' (created by py2exe, under Linux, use main.py instead)
+2.执行'main.exe'(由py2exe创建，在Linux下，使用main.py代替)
 
-3. Input a number (1 for Images/001, 2 for Images/002, etc...), and click 'Load'.
-The images in that folder will be loaded.
+3. 输入一个数字（1代表Images/001，2代表Images/002，等等...），然后点击 "加载"。该文件夹中的图像将被加载。
 
-
-4. choose the class of the next bbox you'll make, click 'confirm'. The default is to label interested nematodes,
-- if the next nematode you want to label is non-interested, please change class and click 'confirm'.
-- if again you want to label interested nematodes, you should change back and click 'confirm'.
-
-5. To create a new bounding box, left-click to select the first vertex. 
-Moving the mouse to draw a rectangle, and left-click again to select the second vertex.
-
-- To cancel the bounding box while drawing, just press <Esc>.
-
-- To delete a existing bounding box, select it from the listbox, and click 'Delete'.
-
-- To delete all existing bounding boxes in the image, simply click 'ClearAll'.
+4.选择你要做的下一个bbox的类，点击'确认'。默认是给感兴趣的目标打标签。
+- 如果下一个你想标注的目标是不感兴趣的，请改变类别并点击'确认'。
+- 如果你又想贴上感兴趣的目标标签，你应该换回并点击 "确认"。
 
 
-6. After finishing one image, click 'Next' to advance. Likewise, click 'Prev' to reverse.
-Or, input the index and click 'Go' to navigate to an arbitrary image.
-- The labeling result will be saved if and only if the 'Next' button is clicked.  
+
+5. 要创建一个新的边界框，左键单击选择第一个顶点。
+移动鼠标绘制一个矩形，再次左键选择第二个顶点。
+
+- 要在绘制时取消边界框，按<Esc>键即可。
+
+- 要删除一个现有的边界框，从列表框中选择它，然后点击 "删除"。
+
+- 要删除图像中所有现有的边界框，只需单击 "ClearAll"。
 
 
-7. I suggest you finish one image folder a time so you won't miss any images. Do remember to click 'Next'
-after labeling the last image.
 
-8. All bounding boxes will be stored in corresponding folders under 'Labels'.
-Folder 'Images' and 'Labels' should be sent back to us.
+6. 完成一张图片后，点击'下一张'前进。同样，点击'上一步'也可以反转。
+或者，输入索引并点击'Go'来导航到任意图像。
+- 只有在点击'下一步'按钮的情况下，标注结果才会被保存。
+
+7. 我提议你一次完成一个图像文件夹，这样你就不会错过任何图像。记得点击'下一步'。
+在标注完最后一张图片后。
+
+
+8. 所有的边框将被存储在'标签'下的相应文件夹中。
+'Images'和'Labels'文件夹将返回给我们。
 
 ==================
 
